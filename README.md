@@ -1,5 +1,5 @@
 # WTF-HTML
-WTF HTML教程，参考mdn docs html教程。
+WTF HTML教程，参考MDN HTML教程。
 
 **第1讲：Hello HTML**
 
