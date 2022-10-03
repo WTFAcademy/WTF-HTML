@@ -1,5 +1,5 @@
 # WTF-HTML
-WTF HTML教程，参考MDN HTML教程。
+WTF HTML极简教程，参考了MDN HTML教程，帮助想进入Web3的程序员更快入门HTML。
 
 **第1讲：Hello HTML**
 
