@@ -12,9 +12,9 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 **第1讲：Hello HTML** ：【[代码](https://github.com/WTFAcademy/WTFEthers/blob/main/01_HelloHTML)】 【[教程](https://github.com/WTFAcademy/WTFEthers/blob/main/01_HelloHTML/readme.md)】
 
-**第2讲：HTML文件结构**：【[代码](https://github.com/WTFAcademy/WTFEthers/blob/main/02_HelloHTML)】 【[教程](https://github.com/WTFAcademy/WTFEthers/blob/main/01_HelloHTML/readme.md)】
+**第2讲：HTML元素详解**
 
-**第3讲：文本标签**
+**第3讲：常用文本标签**
 
 **第4讲：列表**
 
