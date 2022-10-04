@@ -10,7 +10,7 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 ## 入门
 
-**第1讲：Hello HTML** ：【[代码](https://github.com/WTFAcademy/WTFEthers/blob/main/01_HelloHTML)】 【[教程](https://github.com/WTFAcademy/WTFEthers/blob/main/01_HelloHTML/readme.md)】
+**第1讲：Hello HTML** ：【[代码](https://github.com/WTFAcademy/WTF-HTML/blob/main/01_HelloHTML)】 【[教程](https://github.com/WTFAcademy/WTF-HTML/blob/main/01_HelloHTML/readme.md)】
 
 **第2讲：HTML元素详解**
 
