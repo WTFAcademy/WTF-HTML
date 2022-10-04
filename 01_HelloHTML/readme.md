@@ -48,7 +48,7 @@ My cat is very grumpy
 
 ## Hello HTML
 
-现在来看看单个元素如何彼此协同构成一个完整的 HTML 页面，我们将写第一个 HTML 程序：Hello HTML（9行代码）
+现在我们将写第一个 HTML 程序：Hello HTML（9行代码），看看单个元素如何彼此协同构成一个完整的 HTML 页面。
 
 ```html
 <!DOCTYPE html>
