@@ -1,5 +1,8 @@
 # WTF-HTML
-WTF HTML极简教程，参考了MDN HTML教程，帮助想进入Web3的程序员更快入门HTML。
+
+WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org/zh-CN/docs/Learn/HTML))，帮助新人快速入门HTML。
+
+---
 
 **第1讲：Hello HTML**
 
@@ -17,5 +20,6 @@ WTF HTML极简教程，参考了MDN HTML教程，帮助想进入Web3的程序员
 
 **第8讲：语义标签**
 
-## 资料
+## 资源
+
 MDN HTML教程：[链接](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)
