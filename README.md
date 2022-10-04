@@ -4,9 +4,15 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 ---
 
-**第1讲：Hello HTML**
+## 开发工具
 
-**第2讲：HTML文件结构**
+我们建议大家使用 [VSCode](https://code.visualstudio.com/download) 开发 HTML，并用浏览器（Chrome）打开`.html`文件进行浏览。
+
+## 入门
+
+**第1讲：Hello HTML** ：【[代码](https://github.com/WTFAcademy/WTFEthers/blob/main/01_HelloHTML)】 【[教程](https://github.com/WTFAcademy/WTFEthers/blob/main/01_HelloHTML/readme.md)】
+
+**第2讲：HTML文件结构**：【[代码](https://github.com/WTFAcademy/WTFEthers/blob/main/02_HelloHTML)】 【[教程](https://github.com/WTFAcademy/WTFEthers/blob/main/01_HelloHTML/readme.md)】
 
 **第3讲：文本标签**
 
@@ -19,6 +25,8 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 **第7讲：图片**
 
 **第8讲：语义标签**
+
+**第9讲：Uniswap页面**
 
 ## 资源
 
