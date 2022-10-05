@@ -1,0 +1,10 @@
+**.DS_Store
+.DS_Store
+node_modules
+cache
+typechain-types
+.idea
+.history
+**node_modules**
+**cache**
+**artifacts**
