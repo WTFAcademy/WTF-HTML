@@ -1,4 +1,4 @@
-# WTF HTML极简教程: 1. Hello HTML （9行代码）
+# WTF HTML极简教程: 6. Hyperlink 超链接
 
 WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org/zh-CN/docs/Learn/HTML))，帮助新人快速入门HTML。
 
