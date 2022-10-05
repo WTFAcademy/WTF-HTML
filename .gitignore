@@ -3,6 +3,7 @@
 node_modules
 cache
 typechain-types
+artifacts
 .idea
 .history
 **node_modules**
