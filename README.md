@@ -14,13 +14,13 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 **第2讲：HTML元素详解**
 
-**第3讲：常用文本标签**
+**第3讲：常用文本标签** ：【[代码](https://github.com/WTFAcademy/WTF-HTML/blob/main/03_Text)】 【[教程](https://github.com/WTFAcademy/WTF-HTML/blob/main/03_Text/readme.md)】
 
 **第4讲：列表**
 
 **第5讲：表单**
 
-**第6讲：超链接**
+**第6讲：超链接** ：【[代码](https://github.com/WTFAcademy/WTF-HTML/blob/main/06_Hyperlink)】 【[教程](https://github.com/WTFAcademy/WTF-HTML/blob/main/06_Hyperlink/readme.md)】
 
 **第7讲：图片**
 
