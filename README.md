@@ -12,7 +12,7 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 **第1讲：Hello HTML** ：【[代码](https://github.com/WTFAcademy/WTF-HTML/blob/main/01_HelloHTML)】 【[教程](https://github.com/WTFAcademy/WTF-HTML/blob/main/01_HelloHTML/readme.md)】
 
-**第2讲：HTML元素详解**
+**第2讲：HTML元素详解** ：【[代码](https://github.com/WTFAcademy/WTF-HTML/blob/main/02_Element)】 【[教程](https://github.com/WTFAcademy/WTF-HTML/blob/main/02_Element/readme.md)】
 
 **第3讲：常用文本标签** ：【[代码](https://github.com/WTFAcademy/WTF-HTML/blob/main/03_Text)】 【[教程](https://github.com/WTFAcademy/WTF-HTML/blob/main/03_Text/readme.md)】
 
@@ -26,7 +26,7 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 **第8讲：语义标签**
 
-**第9讲：Uniswap页面**
+**第9讲：Uniswap页面** ：【[代码](https://github.com/WTFAcademy/WTF-HTML/blob/main/09_UniswapHTML)】 【[教程](https://github.com/WTFAcademy/WTF-HTML/blob/main/09_UniswapHTML/readme.md)】
 
 ## 资源
 
