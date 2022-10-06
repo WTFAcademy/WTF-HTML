@@ -123,11 +123,11 @@ HTML文件决定了页面的结构，因此当我们拿到一个页面后，在�
 </div>
 ```
 
-gasFee和blockNumber部分包含了两个超链接，用于跳转到相应的etherscan页面，第二个超链接的`href`是由js动态调整的，在此我们就不填。
+gasFee和blockNumber部分包含了两个超链接，用于跳转到相应的etherscan页面。第二个超链接的`href`是由js动态调整的，在此我们就不填。同时两个超链接中的内容也是由JS动态输入的，在此我们暂时先填入固定的数值。
 
 ```html
 <div class="gasPriceAndBlockNumber">
-    <a href="https://etherscan.io/gastracker"> 3 gwei</a>
+    <a href="https://etherscan.io/gastracker">3 gwei</a>
     <a href="">15687194</a>
 </div>
 ```
