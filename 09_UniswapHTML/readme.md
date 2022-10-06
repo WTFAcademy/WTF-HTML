@@ -10,7 +10,7 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 ---
 
-这一讲，我们将对前八讲的知识进行组合应用，并编写第一个Uniswap的极简HTML页面（注意：Uniswap前端页面是用React编写的，在此我们降低难度用HTML编写页面）
+这一讲，我们将对前八讲的知识进行组合应用，并编写第一个Uniswap的极简HTML页面（注意：Uniswap前端页面是用React编写的，在此我们降低难度用HTML编写页面）。
 
 
 ## 分析页面结构
@@ -31,7 +31,7 @@ HTML文件决定了页面的结构，因此当我们拿到一个页面后，在�
 
 ## 编写代码
 
-### <head>中的预处理
+### `<head>`中的预处理
 
 为了方便我们查看效果，我引入了一个名为`style.css`的外部样式表，它的作用仅仅是设置html中图片的大小。
 
@@ -78,9 +78,9 @@ HTML文件决定了页面的结构，因此当我们拿到一个页面后，在�
 
 然后是中间部分，中间部分也包含三个直接相邻的子元素，分别是交换token的页面、选择语言和右下角的gasFee和blockNumber。
 
-交换token的页面比较复杂，它里面还有设置、选择token、连接钱包三个部分。
+兑换token的页面比较复杂，它里面还有设置、选择token、连接钱包三个部分。
 
-设置里面包含了一个内容为`交换`的`span`和一个用于改变设置的`button`，`button`里还有一个`img`。
+设置里面包含了一个内容为`兑换`的`span`和一个用于改变设置的`button`，`button`里还有一个`img`。
 
 ```html
 <div class="swap-page-header">
@@ -108,7 +108,13 @@ HTML文件决定了页面的结构，因此当我们拿到一个页面后，在�
 
 最下面连接钱包的结构比较简单，里面只有一个`button`。
 
-选择语言部分包含了一个`span`和一个超链接，用于改变页面的语言，超链接的`href`需要填写一个英文版的Uniswap网页链接，在此我们不填。
+```html
+<div class="swap-page-footer">
+    <button>连接钱包</button>
+</div>
+```
+
+选择语言部分包含了一个`span`和一个超链接，用于改变页面的语言，超链接的`href`需要填写一个英文版的Uniswap网页链接，在此我们就不填。
 
 ```html
 <div class="chooseLanguage">
@@ -117,18 +123,18 @@ HTML文件决定了页面的结构，因此当我们拿到一个页面后，在�
 </div>
 ```
 
-gasFee和blockNumber部分包含了两个超链接，用于跳转到etherscan页面，第二个超链接的`href`是由js动态调整的，在此我们就不填。
+gasFee和blockNumber部分包含了两个超链接，用于跳转到相应的etherscan页面，第二个超链接的`href`是由js动态调整的，在此我们就不填。
 
 ```html
-        <div class="gasPriceAndBlockNumber">
-            <a href="https://etherscan.io/gastracker"> 3 gwei</a>
-            <a href="">15687194</a>
-        </div>
+<div class="gasPriceAndBlockNumber">
+    <a href="https://etherscan.io/gastracker"> 3 gwei</a>
+    <a href="">15687194</a>
+</div>
 ```
 
 到此Uniswap的极简HTML页面代码就写完了，我们可以在页面中打开查看效果。
 
-![效果](./img/9-4.jpg)
+![效果](./img/9-5.jpg)
 
 可以看到，我们的页面是非常丑陋的，同时基本上没有任何功能，这需要我们后期再给它加上CSS和JS。
 
