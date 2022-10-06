@@ -100,7 +100,7 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 ![效果](./img/2-5.jpg)
 
-常见的块级元素有：span、a、strong、em、img、input
+常见的行内元素有：span、a、strong、em、img、input
 
 ## 总结
 
