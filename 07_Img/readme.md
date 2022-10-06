@@ -49,7 +49,7 @@ WTF HTML 教程，总结/搬运自[MDN HTML 教程](<(https://developer.mozilla.
 
 ![超链接](./img/7-2.png)
 
-所以我们建议你在使用 `img` 标签时加上 alt 属性。
+所以我们在使用 `img` 标签时通常都会加上 alt 属性。
 
 
 ### `width` 与 `height` 属性
