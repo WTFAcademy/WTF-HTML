@@ -22,9 +22,9 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 **第6讲：超链接** ：【[代码](https://github.com/WTFAcademy/WTF-HTML/blob/main/06_Hyperlink)】 【[教程](https://github.com/WTFAcademy/WTF-HTML/blob/main/06_Hyperlink/readme.md)】
 
-**第7讲：图片**
+**第7讲：图片** ：【[代码](https://github.com/WTFAcademy/WTF-HTML/blob/main/07_Img)】 【[教程](https://github.com/WTFAcademy/WTF-HTML/blob/main/07_Img/readme.md)】
 
-**第8讲：语义标签**
+**第8讲：语义标签** ：【[代码](https://github.com/WTFAcademy/WTF-HTML/blob/main/08_SemanticElements)】 【[教程](https://github.com/WTFAcademy/WTF-HTML/blob/main/08_SemanticElements/readme.md)】
 
 **第9讲：Uniswap页面** ：【[代码](https://github.com/WTFAcademy/WTF-HTML/blob/main/09_UniswapHTML)】 【[教程](https://github.com/WTFAcademy/WTF-HTML/blob/main/09_UniswapHTML/readme.md)】
 
