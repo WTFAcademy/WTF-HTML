@@ -10,7 +10,7 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 
 ---
 
-这一讲，我们介绍HTML的常用元素之一：表单。
+这一讲，我们介绍HTML的常用元素之一：[表单](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form)。
 
 ## 基本概念
 
@@ -22,7 +22,9 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 
 ### 文本域（Text Fields）
 
-文本域使用 **`<input type="text">`** 设定，用户可以在文本域中输入具体文本内容。
+[文本域](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input)使用 **`<input type="text">`** 设定，用户可以在文本域中输入具体文本内容。
+
+示例如下：
 
 ```html
 <form>
@@ -33,15 +35,14 @@ Last name: <input type="text" name="lastname">
 
 浏览器展示：
 
-<form>
-First name: <input type="text" name="firstname"><br>
-Last name: <input type="text" name="lastname">
-</form>
+![](./img/5-1.jpg)
 
 ### 密码（Password）
 
 密码通过标签 **`<input type="password">`** 来定义，密码字段不会明文展示，而使用圆点替代。
 
+示例如下：
+
 ```html
 <form>
 Password: <input type="password" name="pwd">
@@ -50,13 +51,13 @@ Password: <input type="password" name="pwd">
 
 浏览器展示：
 
-<form>
-Password: <input type="password" name="pwd">
-</form>
+![img](./img/5-2.jpg)
 
 ### 单选按钮（Radio Buttons）
 
 单选框通过 **`<input type="radio">`** 标签定义
+
+示例如下：
 
 ```html
 <form action="">
@@ -68,16 +69,13 @@ ACCOUNT:
 
 浏览器展示：
 
-<form action="">
-ACCOUNT: <br>
-<input type="radio" name="address" value="addr1">0x5B38Da6a701c568545dCfcB03FcB875f56beddC4<br>
-<input type="radio" name="address" value="addr2">0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
-</form>
-
+![img](./img/5-3.jpg)
 
 ### 下拉选择框（select）
 
-下拉选择框使用 `<select>` 和 `<option>`定义
+[下拉选择框](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/select)使用 `<select>` 和 `<option>`定义
+
+示例如下：
 
 ```html
 <form action="">
@@ -92,18 +90,13 @@ ACCOUNT: <br>
 
 浏览器展示：
 
-<form action="">
-  Contract <br>
-  <select>
-    <option>Facucet.sol</option>
-    <option>ERC20.sol</option>
-    <option value="3">ERC721.sol</option>
-  </select>
-</form>
+![](./img/5-4.jpg)
 
 ### 复选框（Checkboxes）
 
 复选框可以选取一个或多个选项，使用 **`<input type="checkbox">`** 定义
+
+示例如下：
 
 ```html
 <form>
@@ -116,16 +109,13 @@ ACCOUNT: <br>
 
 浏览器展示：
 
-<form>
-  Token value <br>
-  <input type="checkbox" name="token_value" value="Wei">Wei<br>
-  <input type="checkbox" name="token_value" value="GWei">GWei<br>
-  <input type="checkbox" name="token_value" value="Ether">Ether<br>
-</form>
+![img](./img/5-5.jpg)
 
 ### 提交按钮(Submit)
 
 当用户单击确认按钮时，表单的内容会被传送到服务器, 使用 **`<input type="submit">`** 定义。
+
+示例如下：
 
 ```html
 <form name="input" action="action.php" method="get">
@@ -147,10 +137,7 @@ method：定义表单数据的提交方式，可以是以下值：
 
 浏览器展示：
 
-<form name="input" action="html_form_action.php" method="get">
-  <input type="submit" value="Deploy">
-  <input type="text" name="user" placeholder='address'>
-</form>
+![img](./img/5-6.jpg)
 
 ## 总结
 

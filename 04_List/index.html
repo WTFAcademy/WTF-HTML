@@ -7,26 +7,96 @@
 <body>
     <!-- 无序列表 -->
     <ul>
-        <li>first item</li>
-        <li>second item</li>
-        <li>third item</li>
+        <li>BTC</li>
+        <li>ETH</li>
+        <li>SHIB</li>
     </ul>
 
     <!-- 有序列表 -->
     <ol>
-        <li>Coffee</li>
-        <li>Milk</li>
+        <li>BTC</li>
+        <li>ETH</li>
+        <li>SHIB</li>
     </ol>
+
 
     <!-- 定义列表 -->
     <dl>
-        <dt>Coffee</dt>
-        <dd>- black coffee</dd>
-        <dd>- hot coffee</dd>
-        <dt>Milk</dt>
-        <dd>- white milk</dd>
-        <dd>- hot milk</dd>
+        <dt>BTC</dt>
+        <dd>- desc1</dd>
+        <dd>- desc2</dd>
+        <dt>ETH</dt>
+        <dd>- desc1</dd>
+        <dd>- desc2</dd>
     </dl>
+
+
+    <!-- 表格基本使用 -->
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Code</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>比特币</td>
+            <td>BTC</td>
+            <td>19969</td>
+        </tr>
+        <tr>
+            <td>以太币</td>
+            <td>ETH</td>
+            <td>1,354</td>
+        </tr>
+    </table>
+
+
+    <!-- thead,tbody,tfoot -->
+    <table>
+        <thead>
+            <tr>
+                <th>Token</th>
+                <th>Cost</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>180</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>BTC</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>ETH</td>
+                <td>80</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <!-- 合并表格项，colspan和rowspan -->
+    <table>
+        <tr>
+            <th>Token</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>BTC</td>
+            <td>100</td>
+            <td rowspan="2">300</td>
+        </tr>
+        <tr>
+            <td>ETH</td>
+            <td>200</td>
+        </tr>
+    </table>
+
 </body>
 
 </html>
