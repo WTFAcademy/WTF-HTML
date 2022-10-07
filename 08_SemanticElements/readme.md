@@ -95,4 +95,4 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 ## 总结
 
-这一讲我们介绍了一些常用的语义元素，它们无论是对于开发者还是机器而言都是很重要的，在编写页面时我们要经常使用这些语义元素。
+这一讲我们介绍了一些常用的语义元素，它们无论是对于开发者还是机器而言都是很重要的，在编写页面时我们要经常使用这些语义元素。更详细内容你可以阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)。

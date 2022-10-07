@@ -1,6 +1,6 @@
 # WTF HTML极简教程: 2. Element
 
-WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org/zh-CN/docs/Learn/HTML))，帮助新人快速入门HTML。
+WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)，帮助新人快速入门HTML。
 
 **推特**：[@WTFAcademy_](https://twitter.com/WTFAcademy_)  ｜ [@0xAA_Science](https://twitter.com/0xAA_Science) 
 
@@ -10,7 +10,7 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 ---
 
-这一讲，我们将在上一讲的基础上，具体分析HTML中的元素。你也可以直接阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)。
+这一讲，我们将在上一讲的基础上，具体分析HTML中的元素。
 
 
 ## 元素的属性
@@ -104,4 +104,4 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 ## 总结
 
-这一讲我们具体分析了HTML中的元素，包括元素的属性、嵌套元素、空元素、块级元素和行内元素。
+这一讲我们具体分析了HTML中的元素，包括元素的属性、嵌套元素、空元素、块级元素和行内元素。更详细内容你可以阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)。
