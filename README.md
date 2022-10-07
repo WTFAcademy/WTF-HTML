@@ -1,6 +1,6 @@
 # WTF-HTML
 
-WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org/zh-CN/docs/Learn/HTML))，帮助新人快速入门HTML。
+WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org/zh-CN/docs/Learn/HTML))，帮助新人快速入门HTML，并完成一个极简版[Uniswap页面](https://github.com/WTFAcademy/WTF-HTML/blob/main/09_UniswapHTML/readme.md)。
 
 ---
 
