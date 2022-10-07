@@ -1,6 +1,6 @@
 # WTF HTML极简教程: 4. 列表
 
-WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML))，帮助新人快速入门HTML。
+WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)，帮助新人快速入门HTML。
 
 **推特**：[@WTFAcademy_](https://twitter.com/WTFAcademy_)  ｜ [@0xAA_Science](https://twitter.com/0xAA_Science)
 
@@ -10,10 +10,12 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 
 ---
 
-在这一讲我们将介绍HTML的常用元素：列表和[表格](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table)。
+在这一讲我们将介绍HTML的常用元素：列表和[表格](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table)。你也可以直接阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)。
 
 ## 列表
 
+
+## 无序列表ul（unordered lists）
 列表包含三种类型：[无序列表](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ul)、[有序列表](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol)、[定义列表](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/dl)。
 
 ### 无序列表ul（unordered lists）
@@ -257,4 +259,4 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 
 ## 总结
 
-这一讲介绍了html的常用元素列表以及三种列表类型，还有表格的基本使用和合并表格的方式。
+这一讲介绍了html的常用元素列表以及三种列表类型，还有表格的基本使用和合并表格的方式。更详细内容你可以阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)。

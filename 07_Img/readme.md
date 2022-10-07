@@ -70,4 +70,4 @@ height（高度）与 width（宽度）属性用于设置图像的高度与宽�
 不过我们通常不会在 `<img>` 元素中直接设置宽度与高度，后续学习过CSS后，我们一般通过CSS来指定图像的宽度与高度。
 
 ## 总结
-这一讲我们学习了如何通过img标签在页面中嵌入图像，以及它的常用属性。
+这一讲我们学习了如何通过img标签在页面中嵌入图像，以及它的常用属性。更详细内容你可以阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML)。

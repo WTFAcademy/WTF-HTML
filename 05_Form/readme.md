@@ -1,6 +1,6 @@
 # WTF HTML极简教程: 5. 表单
 
-WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML))，帮助新人快速入门HTML。
+WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)，帮助新人快速入门HTML。
 
 **推特**：[@WTFAcademy_](https://twitter.com/WTFAcademy_)  ｜ [@0xAA_Science](https://twitter.com/0xAA_Science)
 
@@ -141,4 +141,4 @@ method：定义表单数据的提交方式，可以是以下值：
 
 ## 总结
 
-这一讲我们介绍了HTML常用元素表单以及其常见的表单元素。
+这一讲我们介绍了HTML常用元素表单以及其常见的表单元素。更详细内容你可以阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Tables)。

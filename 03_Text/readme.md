@@ -10,7 +10,7 @@ WTF HTML教程，总结/搬运自[MDN HTML教程]((https://developer.mozilla.org
 
 ---
 
-这一讲，我们介绍常用的文本标记 HTML 元素。
+这一讲，我们介绍常用的文本标记 HTML 元素。你也可以直接阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)。
 
 ## `<h1>-<h6>`
 
@@ -100,3 +100,5 @@ I am counting on you. **Do not** be late!
 ## 总结
 
 这一讲我们介绍了如何在 HTML 中标记文本，并介绍了一些最重要的元素。在这一领域还有许多语义元素，我们将在后面的文章中看到更多的语义元素。
+
+更详细内容你可以阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)。
