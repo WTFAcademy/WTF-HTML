@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Element</title>
+</head>
+
+<body>
+    <!-- 文本域 -->
+    <form>
+        First name: <input type="text" name="firstname"><br>
+        Last name: <input type="text" name="lastname">
+    </form>
+
+    <!-- 密码 -->
+    <form>
+        Password: <input type="password" name="pwd">
+    </form>
+    <!-- 单选按钮 -->
+    <form action="">
+        ACCOUNT:
+        <input type="radio" name="address" value="addr1">0x5B38Da6a701c568545dCfcB03FcB875f56beddC4<br>
+        <input type="radio" name="address" value="addr2">0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
+    </form>
+    <!-- 复选按钮 -->
+    <form>
+        Token value <br>
+        <input type="checkbox" name="token_value" value="Wei">Wei<br>
+        <input type="checkbox" name="token_value" value="GWei">GWei<br>
+        <input type="checkbox" name="token_value" value="Ether">Ether<br>
+    </form>
+    <!-- 下拉框 -->
+    <form action="">
+        Contract
+        <select>
+            <option>Facucet.sol</option>
+            <option>ERC20.sol</option>
+            <option>ERC721.sol</option>
+        </select>
+    </form>
+    <!-- 提交按钮 -->
+    <form name="input" action="action.php" method="get">
+        <input type="submit" value="Deploy">
+        <input type="text" name="user" placeholder='address'>
+    </form>
+</body>
+
+</html>
