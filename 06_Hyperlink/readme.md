@@ -111,10 +111,10 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 
 ### 创建下载链接
 
-<a href="./img/6-2.png" download="wtflogo">下载 WTFAcademy logo</a>
+<a href="https://github.com/WTFAcademy/WTF-HTML/blob/main/06_Hyperlink/img/6-2.png" download="wtflogo">下载 WTFAcademy logo</a>
 
 ```html
-<a href="./img/6-2.png" download="wtflogo">下载 WTFAcademy logo</a>
+<a href="https://github.com/WTFAcademy/WTF-HTML/blob/main/06_Hyperlink/img/6-2.png" download="wtflogo">下载 WTFAcademy logo</a>
 ```
 
 ## 总结
