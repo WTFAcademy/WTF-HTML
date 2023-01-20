@@ -31,3 +31,13 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 ## 资源
 
 MDN HTML教程：[链接](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)
+
+## WTF HTML贡献者
+<div align="center">
+  <h4 align="center">
+    贡献者是WTF学院的基石
+  </h4>
+  <a href="https://github.com/WTFAcademy/WTF-HTML/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=WTFAcademy/WTF-HTML" />
+  </a>
+</div>

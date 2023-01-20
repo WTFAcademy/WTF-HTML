@@ -1,4 +1,4 @@
-# WTF HTML极简教程: 2. UniswapHTML
+# WTF HTML极简教程: 9. Uniswap页面
 
 WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)，帮助新人快速入门HTML。
 
@@ -10,7 +10,9 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 
 ---
 
-这一讲，我们将对前八讲的知识进行组合应用，并编写第一个Uniswap的极简HTML页面（注意：Uniswap前端页面是用React编写的，在此我们降低难度用HTML编写页面）。
+这一讲，我们将对前 8 讲的知识进行组合应用，并编写去中心化交易所 [Uniswap](https://app.uniswap.org) 的极简HTML页面
+
+>Uniswap前端页面是用React编写的，在此我们降低难度用HTML编写。
 
 
 ## 分析页面结构
@@ -31,15 +33,9 @@ HTML文件决定了页面的结构，因此当我们拿到一个页面后，在�
 
 ## 编写代码
 
-### `<head>`中的预处理
+### `<head>`
 
-为了方便我们查看效果，我引入了一个名为`style.css`的外部样式表，它的作用仅仅是设置html中图片的大小。
-
-```html
-<link rel="stylesheet" href="./style.css">
-```
-
-同时在`<head>`中我们可以设置页面的`title`和图标。
+在 `<head>` 中我们可以设置页面的 `title` 和图标。
 
 ```html
 <link rel="icon" href="./img/icon.png">
@@ -51,7 +47,7 @@ HTML文件决定了页面的结构，因此当我们拿到一个页面后，在�
 首先我们处理头部的结构，头部里包含三个子元素。左边只有一个icon，中间是切换页面的超链接，四个超链接用一个`div`包裹，右边有网络、连接钱包按钮和菜单按钮，这三个元素也用一个`div`包裹。网络里面包含了ETH的`img`和`span`。
 
 ```html
-<div class="header">
+<header>
     <img src="./img/icon.png" alt="icon">
     <div class="switchPage">
         <a>兑换</a>
@@ -67,8 +63,10 @@ HTML文件决定了页面的结构，因此当我们拿到一个页面后，在�
         <button>连接钱包</button>
         <button>···</button>
     </div>
-</div>
+</header>
 ```
+
+> Tips: 在复杂页面中，我们可以用 HTML `class` 属性来指定元素的类，之后 `CSS` 和 `JavaScript` 可以通过它来访问和操作具有特定类名的元素。
 
 页面效果如下：
 
@@ -76,11 +74,11 @@ HTML文件决定了页面的结构，因此当我们拿到一个页面后，在�
 
 ### 中间结构
 
-然后是中间部分，中间部分也包含三个直接相邻的子元素，分别是交换token的页面、选择语言和右下角的gasFee和blockNumber。
+然后是中间部分，中间部分也包含三个直接相邻的子元素，分别是交换 token 的页面、选择语言和右下角的 gasFee 和 blockNumber 。
 
-兑换token的页面比较复杂，它里面还有设置、选择token、连接钱包三个部分。
+兑换 token 的页面比较复杂，它里面还有设置、选择token、连接钱包三个部分。
 
-设置里面包含了一个内容为`兑换`的`span`和一个用于改变设置的`button`，`button`里还有一个`img`。
+设置里面包含了一个内容为 `兑换` 的 `span` 和一个用于改变设置的`button`，`button`中包含一个`img`。
 
 ```html
 <div class="swap-page-header">
@@ -123,7 +121,7 @@ HTML文件决定了页面的结构，因此当我们拿到一个页面后，在�
 </div>
 ```
 
-gasFee和blockNumber部分包含了两个超链接，用于跳转到相应的etherscan页面。第二个超链接的`href`是由js动态调整的，在此我们就不填。同时两个超链接中的内容也是由JS动态输入的，在此我们暂时先填入固定的数值。
+gasFee和blockNumber部分包含了两个超链接，用于跳转到相应的 etherscan 页面。第二个超链接的`href`是由 JavaScript 动态调整的，在此我们就不填。同时两个超链接中的内容也是由 JavaScript 动态输入的，在此我们暂时先填入固定的数值。
 
 ```html
 <div class="gasPriceAndBlockNumber">
@@ -136,10 +134,14 @@ gasFee和blockNumber部分包含了两个超链接，用于跳转到相应的eth
 
 ![效果](./img/9-5.jpg)
 
-可以看到，我们的页面是非常丑陋的，同时基本上没有任何功能，这需要我们后期再给它加上CSS和JS。
+可以看到，我们的页面是非常丑陋的，同时基本上没有任何功能，这需要我们后期再给它加上 CSS 和 JavaScript。
 
+## 习题
 
+修改 HTML 代码，将极简 Uniswap 页面改为 [SushiSwap](https://www.sushi.com/swap) 页面。
+
+![](./img/9-6.png)
 
 ## 总结
 
-这一讲我们用前8讲所学的HTML知识编写出了第一个Uniswap的极简HTML页面。
+这一讲我们用前8讲所学的 HTML 知识编写出了一个 Uniswap 的极简 HTML 页面。我们将在之后的 `WTF-CSS` 和 `WTF-JavaScript` 中继续完善它。
