@@ -1,6 +1,6 @@
 # WTF HTML极简教程: 3. 常用文本标签
 
-WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)，帮助新人快速入门HTML。
+WTF HTML教程，帮助新人快速入门HTML。
 
 **推特**：[@WTFAcademy_](https://twitter.com/WTFAcademy_)  ｜ [@0xAA_Science](https://twitter.com/0xAA_Science) 
 
@@ -10,95 +10,121 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 
 ---
 
-这一讲，我们介绍常用的文本标记 HTML 元素。你也可以直接阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)。
+HTML 提供了大量的文本标签，以供我们在制作网页时使用。这些标签可以帮助我们更好地组织和格式化我们的文本内容。以下是一些常用的 HTML 文本标签。
 
-## `<h1>-<h6>`
+## `<p>`：段落标签
 
-标题元素可用于指定内容的标题和子标题。就像一本书的书名、每章的大标题、小标题，等。HTML 文档也是一样。HTML 包括六个级别的标题，[`<h1>–<h6>`](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Heading_Elements)，一般最多用到 3-4 级标题。
-
-```html
-<h1>主标题</h1>
-<h2>顶层标题</h2>
-<h3>子标题</h3>
-<h4>次子标题</h4>
-```
-
-> **Note**
->
-> 你可以看到第一级标题是有隐式的主题样式。不要使用标题元素来加大、加粗字体，因为标题对于 [无障碍访问](https://developer.mozilla.org/zh-CN/docs/Learn/Accessibility) 和 [搜索引擎优化](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#为什么我们需要结构化？) 等问题非常有意义。要保持页面结构清晰，标题整洁，不要发生标题级别跳跃。
-
-## `<p>`
-
-在 HTML 中，每个段落是通过 `<p>` 元素标签进行定义的，比如下面这样：
+`<p>` 标签用于定义一个段落。它会在前后各添加一个换行，使得段落之间有明显的区分。
 
 ```html
-<p>我是一个段落，千真万确。</p>
+<p>这是一个段落。</p>
+<p>这是另一个段落。</p>
 ```
 
-## `<span>`
+浏览器中效果：
 
-HTML `<span>` 元素是短语内容的通用行内容器，并没有任何特殊语义。可以使用它来编组元素以达到某种样式意图（通过使用类或者 Id 属性），或者这些元素有着共同的属性，比如lang。应该在没有其他合适的语义元素时才使用它。`<span>` 与 `<div>` 元素很相似，但 `<div>` 是一个 [块级元素](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Block-level_elements) 而 `<span>` 则是 [行内元素](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Inline_elements).
+<p>这是一个段落。</p>
+<p>这是另一个段落。</p>
+
+
+
+## `<h1>` 到 `<h6>`：标题标签
+
+这些标签用于定义 HTML 标题。`<h1>` 定义最大的标题，`<h6>` 定义最小的标题。
 
 ```html
-<p><span>一些文字</span></p>
+<h1>这是一个 h1 标题</h1>
+<h2>这是一个 h2 标题</h2>
+...
+<h6>这是一个 h6 标题</h6>
 ```
 
-## `<br>`
+浏览器中效果：
+<h1>这是一个 h1 标题</h1>
+<h2>这是一个 h2 标题</h2>
+...
+<h6>这是一个 h6 标题</h6>
 
-HTML `<br>` 元素在文本中生成一个换行（回车）符号。此元素在写诗和地址时很有用，这些地方的换行都非常重要。
+## `<br>`：换行标签
 
-比如：
+`<br>` 标签用于插入一个简单的换行符。
 
 ```html
-Mozilla Foundation<br>
-1981 Landings Drive<br>
-Building K<br>
-Mountain View, CA 94043-0801<br>
-USA
+<p>这是一个段落。<br>这是同一个段落的新一行。</p>
 ```
 
-上面的 HTML 输出为：
+浏览器中效果：
 
-```plain
-Mozilla Foundation
-1981 Landings Drive
-Building K
-Mountain View, CA 94043-0801
-USA
-```
+<p>这是一个段落。<br>这是同一个段落的新一行。</p>
 
-## `<em>` 和 `<strong>`
+## `<strong>`：加粗标签
 
-在口语表达中，我们有时会强调某些字，用来改变这句话的意思。同样地，在书面用语中，我们可以使用斜体字来达到同样的效果。例如，下面两个句子便有不同的意思：
-
-I am glad you weren't late.
-
-I am *glad* you weren't *late*. (ps: 此句中"*glad*"和"*late*"为斜体字体)
-
-第一句话听起来真的像松了一口气因为没有迟到。相反，第二句话听起来具有讽刺性而且有隐含的攻击性，表达对一个人迟到的恼怒。
-
-在 HTML 中我们用 `<em>` 元素来标记这样的情况。
+`<strong>` 标签用于定义强调文字，浏览器通常会将其显示为粗体。
 
 ```html
-<p>I am <em>glad</em> you weren't <em>late</em>.</p>
+<p>这是一个<strong>加粗</strong>的文字。</p>
 ```
 
-为了强调重要的词，在口语方面我们往往用重音强调，在文字方面则是用粗体字来达到强调的效果。例如下面这段：
+浏览器中效果：
 
-This liquid is **highly toxic**.
+<p>这是一个<strong>加粗</strong>的文字。</p>
 
-I am counting on you. **Do not** be late!
+## `<em>`：斜体标签
 
-在 HTML 中我们用 `<strong>` 元素来标记这样的情况。
+`<em>` 标签用于定义强调文字，浏览器通常会将其显示为斜体。
 
 ```html
-<p>This liquid is <strong>highly toxic</strong>.</p>
-
-<p>I am counting on you. <strong>Do not</strong> be late!</p>
+<p>这是一个<em>斜体</em>的文字。</p>
 ```
+
+浏览器中效果：
+
+<p>这是一个<em>斜体</em>的文字。</p>
+
+
+## `<u>`：下划线标签
+
+`<u>` 标签用于定义下划线文本。
+
+```html
+<p>这是一个<u>带下划线</u>的文字。</p>
+```
+
+浏览器中效果：
+<p>这是一个<u>带下划线</u>的文字。</p>
+
+## `<del>`：删除线标签
+
+`<del>` 标签用于展示已经被删除的文字，浏览器通常会在其上添加一条横线。
+
+```html
+<p>这是一个<del>已删除</del>的文字。</p>
+```
+
+浏览器中效果：
+<p>这是一个<del>已删除</del>的文字。</p>
+
+## `<mark>`：高亮标签
+
+`<mark>` 标签用于定义标记或高亮的文本。
+
+```html
+<p>这是一个<mark>高亮</mark>的文字。</p>
+```
+浏览器中效果：
+<p>这是一个<mark>高亮</mark>的文字。</p>
+
+
+## `<sub>` 和 `<sup>`：下标和上标标签
+
+`<sub>` 用于定义下标文本，`<sup>` 用于定义上标文本。
+
+```html
+<p>这是一个<sub>下标</sub>和<sup>上标</sup>的例子。</p>
+```
+浏览器中效果：
+<p>这是一个<sub>下标</sub>和<sup>上标</sup>的例子。</p>
 
 ## 总结
 
-这一讲我们介绍了如何在 HTML 中标记文本，并介绍了一些最重要的元素。在这一领域还有许多语义元素，我们将在后面的文章中看到更多的语义元素。
-
-更详细内容你可以阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)。
+这一讲我们介绍了一些常用的 HTML 文本标签，合理使用这些标签可以帮助我们更好地组织和展示我们的网页内容。

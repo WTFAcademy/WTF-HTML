@@ -1,6 +1,6 @@
 # WTF HTML极简教程: 2. Element
 
-WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)，帮助新人快速入门HTML。
+WTF HTML教程，帮助新人快速入门HTML。
 
 **推特**：[@WTFAcademy_](https://twitter.com/WTFAcademy_)  ｜ [@0xAA_Science](https://twitter.com/0xAA_Science) 
 
@@ -10,16 +10,23 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 
 ---
 
-这一讲，我们将在上一讲的基础上，具体分析HTML中的元素。
+在我们了解了HTML的基础概念后，我们将深入讨论HTML的元素。
 
 
 ## 元素的属性
 
-元素也可以有属性(Attribute):
+HTML 元素可以拥有属性（Attribute），它们提供了有关元素的更多信息，或者定义了元素的某些行为。属性总是在开始标签中定义，常常使用 "属性名=属性值" 的形式出现。例如，链接（`a`）元素可以使用 `href` 属性指定链接的目标地址：
 
-![属性](./img/2-1.png)
+```html
+<a href="https://www.example.com">Visit our website</a>
+```
 
-属性包含了关于元素的一些额外信息，这些信息本身不应显现在内容中。本例中，`class`是属性名称，`editor-note`是属性的值。`class`属性可为元素提供一个标识名称，以便进一步为元素指定样式或进行其他操作时使用。
+浏览器中效果：
+
+<a href="https://www.example.com">Visit our website</a>
+
+
+在上述代码中，`a` 元素的 `href` 属性的值为 `"https://www.example.com"`，这意味着当点击该链接时，浏览器将导航到该 URL。
 
 属性应该包含：
 
@@ -33,18 +40,17 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 2. `class`：为元素提供一个或多个类名，不同的元素可以添加相同的类名。
 3. `style`:为元素提供内联样式。
 
-**备注**： 不包含 ASCII 空格(以及`"` `'` `=` `<` `>`)的简单属性值可以不使用引号，但是建议将所有属性值用引号括起来，这样的代码一致性更佳，更易于阅读。
 
 ## 嵌套元素
 
-也可以将一个元素置于其他元素之中 —— 称作**嵌套**。要表明猫咪非常暴躁，可以将`very`用`<strong>`元素包围，`very`将突出显示：
+HTML 元素可以嵌套在其他元素中。这意味着你可以在一个元素内部放置另一个或多个元素，以创建更复杂的内容结构。例如，你可能会在一个段落元素内部包含一个或多个链接元素：
 
 ```html
 <p>My cat is <strong>very</strong> grumpy.</p>
 ```
-页面效果：
+浏览器中效果:
 
-![效果](./img/2-2.jpg)
+<p>My cat is <strong>very</strong> grumpy.</p>
 
 必须保证元素嵌套次序正确：本例首先使用`<p>`标签，然后是`<strong>`标签，因此要先结束`<strong>`标签，最后再结束`<p>`标签。这样是不对的：
 
@@ -52,42 +58,43 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 <p>My cat is <strong>very grumpy.</p></strong>
 ```
 
-页面效果：
+浏览器中效果:
 
-![效果](./img/2-3.jpg)
+<p>My cat is <strong>very grumpy.</p></strong>
 
 因此元素必须正确地开始和结束，才能清楚地显示出正确的嵌套层次。否则浏览器就得自己猜测，虽然它会竭尽全力，但很大程度不会给你期望的结果。所以一定要避免！
 
 ## 空元素
 
-不包含任何内容的元素称为空元素。比如`<img>`元素：
+HTML 中有一些元素没有内容，也不需要结束标签，这些被称为空元素（Empty Elements）。比如 `<br>` 标签插入一个换行，`<img>` 标签用来插入图片。
 
 ```html
-<img src="images/firefox-icon.png" alt="My test image">
+<br>
+<img src="image.jpg" alt="My Image">
 ```
-
-本元素包含两个属性，但是并没有`</img>`结束标签，元素里也没有内容。这是因为图像元素不需要通过内容来产生效果，它的作用是向其所在的位置嵌入一个图像。
 
 ## 块级元素
 
-块级元素的特点是：
+块级元素（Block-level Elements）在页面中以块的形式显示，常常用作结构元素。常见的块级元素有：`<div>`、`<p>`、`<h1>`-`<h6>` 和 `<ul>` 等。块级元素的特点是：
 
 1. 独占一行
 2. 元素的宽高可以设置
 3. 默认宽度是它父容器的100%
+4. 与其他块级元素上下堆叠
 
 ```html
 <div>我是div</div>
 <div>我也是div</div>
 ```
 
-![效果](./img/2-4.jpg)
+浏览器中效果:
+<div>我是div</div>
+<div>我也是div</div>
 
-常见的块级元素有：div、table、form、h1-h6、p、ul、ol
 
 ## 行内元素
 
-行内元素的特点是：
+行内元素（Inline Elements）不会开始新的一行，它们在文本中流动，仅占据它们包含的内容所需要的宽度。常见的行内元素有：`<span>`、`<a>` 和 `<img>` 等。行内元素的特点是：
 
 1. 可以与相邻的行内元素排列在同一行
 2. 元素的宽高不可设置
@@ -98,10 +105,12 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 <span>我也是span</span>
 ```
 
-![效果](./img/2-5.jpg)
+浏览器中效果:
 
-常见的行内元素有：span、a、strong、em、img、input
+<span>我是span</span>
+<span>我也是span</span>
+
 
 ## 总结
 
-这一讲我们具体分析了HTML中的元素，包括元素的属性、嵌套元素、空元素、块级元素和行内元素。更详细内容你可以阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)。
+这一讲我们具体分析了HTML中的元素，包括元素的属性、嵌套元素、空元素、块级元素和行内元素。

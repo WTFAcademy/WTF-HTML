@@ -1,6 +1,6 @@
-# WTF HTML极简教程: 4. 列表
+# WTF HTML极简教程: 4. 列表和表格
 
-WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/zh-CN/docs/Learn/HTML)，帮助新人快速入门HTML。
+WTF HTML教程，帮助新人快速入门HTML。
 
 **推特**：[@WTFAcademy_](https://twitter.com/WTFAcademy_)  ｜ [@0xAA_Science](https://twitter.com/0xAA_Science)
 
@@ -10,19 +10,23 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 
 ---
 
-在这一讲我们将介绍HTML的常用元素：列表和[表格](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/table)。你也可以直接阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics)。
+
+HTML 中的列表和表格标签是构建网页的重要工具，它们可以帮助我们组织和显示数据。以下是关于列表和表格的一些基本信息。
+
 
 ## 列表
 
+在HTML中，有三种类型的列表：
 
-## 无序列表ul（unordered lists）
-列表包含三种类型：[无序列表](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ul)、[有序列表](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol)、[定义列表](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/dl)。
+1. 无序列表（Unordered list）：使用`<ul>`元素来创建，每个列表项都要用`<li>`元素来表示。
+2. 有序列表（Ordered list）：使用`<ol>`元素来创建，列表项同样用`<li>`元素来表示，不同的是它们会自动添加序号。
+3. 定义列表（Definition list）：使用`<dl>`元素创建，包含`<dt>`（定义标题）和`<dd>`（定义描述）元素。
 
-### 无序列表ul（unordered lists）
+下面我们详细介绍每种列表的用法和特点。
 
-无序列表常用于表示一个没有顺序关系的列表，每个列表项使用粗体圆点标记。
+### 无序列表
 
-`<ul>` 用于作为列表的容器，而 `<li>` 用于描述具体的列表项。例如：
+无序列表是最常见的列表类型，它在每个列表项前添加一个小圆点（也叫做列表符号）。它使用 `<ul>` 作为列表的容器，而 `<li>` 作为描述具体的列表项。例如：
 
 ```html
 <ul>
@@ -33,7 +37,7 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 ```
 
 
-浏览器中显示如下：
+浏览器中效果：
 
 <ul>
   <li>BTC</li>
@@ -42,11 +46,9 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 </ul>
 
 
-### 有序列表ol（ordered lists）
+### 有序列表
 
-相对于无序列表，有序列表的每个列表项会使用数字进行标记。
-
-有序列表始使用 `<ol>` 作为列表的容器，同样使用 `<li>` 描述具体的列表项。例如：
+相对于无序列表，有序列表的每个列表项会使用数字进行标记。有序列表始使用 `<ol>` 作为列表的容器，同样使用 `<li>` 描述具体的列表项。例如：
 
 ```html
 <ol>
@@ -65,13 +67,9 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 </ol>
 
 
-### 定义列表dl（definition lists）
+### 定义列表
 
-定义列表的每个列表项可以和具体的描述组合起来，丰富列表项的内容。
-
-定义列表使用 `<dl>` 作为列表容器，使用 `<dt>` (definition term)作为列表项，每个列表项的定义以 `<dd>` (description detail)开始。
-
-示例如下：
+定义列表由`<dl>`（定义列表）、`<dt>`（定义项）和`<dd>`（定义描述）元素组成。定义列表通常用来展示一组术语和它们的定义。
 
 ```html
 <dl>
@@ -96,11 +94,11 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 </dl>
 
 
-## 表格table
+## 表格
 
-### 基础使用 `<table>`、`<tr>`、`<th>`和 `<td>`
+### 基础表格
 
-表格可以用于展示二维的数据，使用 `<table>`作为表格的容器
+表格可以用于展示二维的数据，它使用 `<table>`作为表格的容器
 
 内部使用 `<tr>`(table row)表示一行的数据
 
@@ -211,9 +209,9 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 
 
 
-### 合并表格：colspan和rowspan
+### 合并表格
 
-合并表格可以使用 `<td>`和`<th>`的colspan和rowspan属性，其中colspan用于水平合并多行，rowspan用于垂直合并多列。
+合并表格可以使用 `<td>`和`<th>`的`colspan`和`rowspan`属性，其中`colspan`用于水平合并多行，`rowspan`用于垂直合并多列。
 
 示例如下：
 
@@ -259,4 +257,4 @@ WTF HTML教程，总结/搬运自[MDN HTML教程](https://developer.mozilla.org/
 
 ## 总结
 
-这一讲介绍了html的常用元素列表以及三种列表类型，还有表格的基本使用和合并表格的方式。更详细内容你可以阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)。
+这一讲我们介绍了 HTML 中的列表和表格。通过学习这些标签，你已经能够创建结构化的列表和表格，这是构建高质量网页的重要步骤。
