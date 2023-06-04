@@ -1,6 +1,6 @@
-# WTF HTML 极简教程: 7. 图像
+# WTF HTML 极简教程: 7. 图片
 
-WTF HTML 教程，总结/搬运自[MDN HTML 教程](<(https://developer.mozilla.org/zh-CN/docs/Learn/HTML)>)，帮助新人快速入门 HTML。
+WTF HTML 教程，帮助新人快速入门 HTML。
 
 **推特**：[@WTFAcademy_](https://twitter.com/WTFAcademy_) ｜ [@0xAA_Science](https://twitter.com/0xAA_Science)
 
@@ -10,64 +10,79 @@ WTF HTML 教程，总结/搬运自[MDN HTML 教程](<(https://developer.mozilla.
 
 ---
 
-在网页中图像随处可见，小到网页的 Logo，大到网页的背景，都可以使用图像。这一讲，我们来详细介绍 `<img>` 图像元素。
+在网页中，图片是一种非常重要的媒体类型，能够提升用户体验，使信息传递更为直观和生动。本章节将介绍如何在 HTML 中嵌入和处理图片。
 
-## `<img>`：图像嵌入元素
+## 插入图片
 
-在 HTML 中，使用 `<img>` 元素可以将图像嵌入到页面中。
+在 HTML 中，我们使用 `<img>` 标签来插入图片。`<img>` 标签是自闭合标签，也就是说它没有结束标签。图片的地址通过 `<img>` 标签的 `src`（source）属性指定。
 
-![WTFAcademy logo](./img/7-1.png)
-
-它的用法是：
+例如：
 
 ```html
-<img src="url" alt="description_text" />
+<img src="https://wtf.academy/img/wtflogo.png">
 ```
 
-### `src` 属性是必须的，它包含了你想嵌入的图像的文件路径。
+浏览器效果：
 
-例如我们想像上图一样在页面中展示 WTFAcademy logo。
+<img src="https://wtf.academy/img/wtflogo.png">
+
+## 设置图片属性
+
+`<img>` 标签还有一些其他的属性，可以用来设置图片的大小、替代文本等。
+
+### 设置图片大小
+
+我们可以通过 `<img>` 标签的 `width` 和 `height` 属性来设置图片的宽度和高度。这两个属性的值可以是具体的像素值，也可以是百分比。
+
+例如：
 
 ```html
-<img src="https://wtf.academy/img/wtflogo.png" />
+<img src="https://wtf.academy/img/wtflogo.png" width="200" height="100">
 ```
 
-### `alt` 属性用来为图像定义一条文本描述。
+浏览器效果：
 
-`alt` 属性是不是必须的，它可以让浏览器无法载入图像时，展示 `alt` 属性中所写的文本描述。它的另一个用处是对于无障碍而言，屏幕阅读器会将这些描述读给需要使用阅读器的使用者听，让他们知道图像的含义。
+<img src="https://wtf.academy/img/wtflogo.png" width="200" height="100">
 
-> **浏览器并非总是会显示图像，比如：**
-> 1. 非可视化浏览器（Non-visual browsers）（比如有视力障碍的人使用的音频浏览器）
-> 2. 用户选择不显示图像（比如为了节省带宽，或出于隐私等考虑不加载包括图片在内的第三方资源文件）
-> 3. 图像文件无效，或是使用了不支持的格式在这些情况下，浏览器很可能会将图像替换为图像所属 `<img>` 元素的 alt 属性所提供的文本。
-> 4. ......
+
+这将会设置图片的宽度为 200 像素，高度为 100 像素。
+
+需要注意的是，如果同时设置了图片的宽度和高度，而这两个值的比例与图片本身的比例不一致，那么图片可能会被拉伸或压缩，造成形变。因此，在设置图片大小的时候，我们一般只设置宽度或者高度中的一个，另一个保持自动。
+
+### 设置替代文本
+
+替代文本（alt text）用来在图片无法加载的时候显示，也被屏幕阅读器用来读出图片的内容，帮助视力障碍者理解图片。我们通过 `<img>` 标签的 `alt` 属性来设置替代文本。
+
+例如：
 
 ```html
-// 这是一个错误链接，它在页面中的效果如下图所示
-<img src="https://wtf1.academy/img/wtflogo.png" alt="This is WTFAcademy Logo" />
+<img src="https://www.example.com/path/to/image.jpg" alt="A description of the image">
 ```
 
-![超链接](./img/7-2.png)
+浏览器效果：
 
-所以我们在使用 `img` 标签时通常都会加上 alt 属性。
+<img src="https://www.example.com/path/to/image.jpg" alt="A description of the image">
 
 
-### `width` 与 `height` 属性
+如果图片无法加载，那么页面上将显示 "A description of the image"。
 
-height（高度）与 width（宽度）属性用于设置图像的高度与宽度，属性值默认单位为像素（px）。
+
+### 图片链接
+
+图片也可以被用作超链接。我们只需要把 `<img>` 标签放在 `<a>` 标签内部，就可以创建一个图片链接。
 
 ```html
-// 设置图像大小为 1200px * 510px
-<img
-  src="https://wtf1.academy/img/wtflogo.png"
-  alt="This is WTFAcademy Logo"
-  width="1200"
-  height="510"
-/>
+<a href="https://wtf.academy/">
+  <img src="https://wtf.academy/img/wtflogo.png" alt="WTFAcademy logo" />
+</a>
 ```
 
-给图片设置宽度与高度的好处是，在页面加载的时会保留指定的尺寸，以确保图像被加载之前页面的布局是稳定的。
-不过我们通常不会在 `<img>` 元素中直接设置宽度与高度，后续学习过CSS后，我们一般通过CSS来指定图像的宽度与高度。
+浏览器效果：
+
+<a href="https://wtf.academy/">
+  <img src="https://wtf.academy/img/wtflogo.png" alt="WTFAcademy logo" />
+</a>
 
 ## 总结
-这一讲我们学习了如何通过img标签在页面中嵌入图像，以及它的常用属性。更详细内容你可以阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML)。
+
+在这一章节中，我们介绍了如何在 HTML 中插入图片，以及如何设置图片的属性，包括大小和替代文本。我们还讲解了如何创建图片链接。通过学习这些内容，你已经可以在你的网页中自由地使用图片了。

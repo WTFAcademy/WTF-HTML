@@ -47,6 +47,11 @@ HTML文档由HTML元素组成。HTML元素由标签、内容和结束标签组�
 <p>This is a paragraph.</p>
 ```
 
+浏览器中效果：
+
+<p>This is a paragraph.</p>
+
+
 在这个例子中，`<p>`是开始标签，`This is a paragraph.`是内容，`</p>`是结束标签。
 
 HTML元素可以有属性，属性提供了元素的额外信息，例如，一个链接元素如下所示：
@@ -54,6 +59,10 @@ HTML元素可以有属性，属性提供了元素的额外信息，例如，一�
 ```html
 <a href="https://www.example.com">This is a link</a>
 ```
+
+浏览器中效果：
+
+<a href="https://www.example.com">This is a link</a>
 
 在这个例子中，`href`是一个属性，它指定了链接的目标地址。
 

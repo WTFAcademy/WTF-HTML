@@ -10,21 +10,27 @@ WTF HTML教程，帮助新人快速入门HTML。
 
 ---
 
-这一讲，我们介绍HTML的常用元素之一：[表单](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/form)。
+表单是 HTML 中非常重要的一部分，它能让用户在网页上输入信息，并将信息提交到服务器。在这一章节中，我们将详细介绍如何使用`<form>`、`<input>`、`<textarea>`等标签来创建表单。
 
-## 基本概念
+## 表单的创建
 
-表单常用于收集用户的输入信息，并发送至web服务器，实现网页与用户的交互。
+在 HTML 中，表单的创建主要由`<form>`元素完成。`<form>`元素定义了用户输入数据的区域，并且可以包含不同类型的输入元素，如文本字段、选择框、复选框、单选框和按钮等。
 
-表单使用 `<form>` 创建，内嵌表单的输入内容，可以包含例如文本域、下拉选择框（select）、单选框（radio-buttons）、复选框（checkbox）等元素，以下将逐一介绍。
+一个基本的表单结构如下：
 
-## 常见的表单元素
+```html
+<form>
+  <!-- 表单元素放在这里 -->
+</form>
+```
 
-### 文本域（Text Fields）
+在`<form>`元素中，你可以添加属性`action`和`method`。`action`属性定义表单数据提交到服务器后的处理文件的 URL。`method`属性定义数据如何发送到服务器，常用的值有 "get" 和 "post"。
 
-[文本域](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Input)使用 **`<input type="text">`** 设定，用户可以在文本域中输入具体文本内容。
+## 文本输入
 
-示例如下：
+在表单中，我们经常需要用户输入文本。这可以通过`<input>`元素完成，其`type`属性设置为 "text"。
+
+例如：
 
 ```html
 <form>
@@ -33,15 +39,18 @@ Last name: <input type="text" name="lastname">
 </form>
 ```
 
-浏览器展示：
+浏览器效果：
 
-![](./img/5-1.jpg)
+<form>
+First name: <input type="text" name="firstname"><br>
+Last name: <input type="text" name="lastname">
+</form>
 
-### 密码（Password）
+## 密码
 
-密码通过标签 **`<input type="password">`** 来定义，密码字段不会明文展示，而使用圆点替代。
+如果你需要用户输入密码，可以将`<input>`元素的`type`属性设置为 "password"，输入的内容会被隐藏起来。
 
-示例如下：
+例如：
 
 ```html
 <form>
@@ -49,15 +58,15 @@ Password: <input type="password" name="pwd">
 </form>
 ```
 
-浏览器展示：
+浏览器效果：
 
-![img](./img/5-2.jpg)
+<form>
+Password: <input type="password" name="pwd">
+</form>
 
-### 单选按钮（Radio Buttons）
+## 单选按钮（Radio Buttons）
 
-单选框通过 **`<input type="radio">`** 标签定义
-
-示例如下：
+单选按钮和复选框可以让用户在多个选项中选择一个或多个。单选按钮的`type`属性值为 "radio"。
 
 ```html
 <form action="">
@@ -67,30 +76,14 @@ ACCOUNT:
 </form>
 ```
 
-浏览器展示：
+浏览器效果：
 
-![img](./img/5-3.jpg)
-
-### 下拉选择框（select）
-
-[下拉选择框](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/select)使用 `<select>` 和 `<option>`定义
-
-示例如下：
-
-```html
 <form action="">
-  Contract
-  <select>
-    <option>Facucet.sol</option>
-    <option>ERC20.sol</option>
-    <option>ERC721.sol</option>
-  </select>
+ACCOUNT:
+
+<input type="radio" name="address" value="addr1">0x5B38Da6a701c568545dCfcB03FcB875f56beddC4<br>
+<input type="radio" name="address" value="addr2">0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
 </form>
-```
-
-浏览器展示：
-
-![](./img/5-4.jpg)
 
 ### 复选框（Checkboxes）
 
@@ -107,13 +100,47 @@ ACCOUNT:
 </form>
 ```
 
-浏览器展示：
+浏览器效果：
 
-![img](./img/5-5.jpg)
+<form>
+  Token value <br>
+  <input type="checkbox" name="token_value" value="Wei">Wei<br>
+  <input type="checkbox" name="token_value" value="GWei">GWei<br>
+  <input type="checkbox" name="token_value" value="Ether">Ether<br>
+</form>
 
-### 提交按钮(Submit)
 
-当用户单击确认按钮时，表单的内容会被传送到服务器, 使用 **`<input type="submit">`** 定义。
+### 下拉列表（select）
+
+下拉列表可以让用户从多个选项中选择一个。它由`<select>`元素创建，并使用`<option>`元素来定义选项。
+
+示例如下：
+
+```html
+<form action="">
+  Contract
+  <select>
+    <option>Facucet.sol</option>
+    <option>ERC20.sol</option>
+    <option>ERC721.sol</option>
+  </select>
+</form>
+```
+
+浏览器效果：
+
+<form action="">
+  Contract
+  <select>
+    <option>Facucet.sol</option>
+    <option>ERC20.sol</option>
+    <option>ERC721.sol</option>
+  </select>
+</form>
+
+### 提交按钮（Submit）
+
+表单通常需要一个提交按钮来提交用户的输入。这可以通过设置`<input>`元素的`type`属性为 "submit" 来完成。
 
 示例如下：
 
@@ -124,21 +151,27 @@ ACCOUNT:
 </form>
 ```
 
-示例中还涉及到form常见的几个元素属性，分别是：
+浏览器效果：
 
-name：表单的名称。该值不能是空字符串，并且在它所在的表单集合中需要是唯一的
+<form name="input" action="action.php" method="get">
+  <input type="submit" value="Deploy">
+  <input type="text" name="user" placeholder='address'>
+</form>
 
-**action** ：指定表单内容的送达地址，实现对输入数据的处理
+## 表单其他元素
 
-method：定义表单数据的提交方式，可以是以下值：
+还有一些表表单常见的元素属性：
 
-* **post**：HTTP POST 方法，表单数据会包含在表单体内发送给服务器，可以用于提交敏感数据，如用户名与密码等
-* **get**：默认值， HTTP GET 方法，表单数据会附加在 **action** 属性的 URL 中，并以 **?** 作为分隔符，一般用于不敏感信息，如分页等。例如：https://www.wtfacademy.com/?currentPage=1，这里的 currentPage=1 就是 get 方法提交的数据
+- **name**：表单的名称。该值不能是空字符串，并且在它所在的表单集合中需要是唯一的
 
-浏览器展示：
+- **action** ：指定表单内容的送达地址，实现对输入数据的处理
 
-![img](./img/5-6.jpg)
+- **method**：定义表单数据的提交方式，可以是以下值：
+
+  - **post**：HTTP POST 方法，表单数据会包含在表单体内发送给服务器，可以用于提交敏感数据，如用户名与密码等
+  - **get**：默认值， HTTP GET 方法，表单数据会附加在 **action** 属性的 URL 中，并以 **?** 作为分隔符，一般用于不敏感信息，如分页等。例如：https://www.wtfacademy.com/?currentPage=1，这里的 currentPage=1 就是 get 方法提交的数据
+
 
 ## 总结
 
-这一讲我们介绍了HTML常用元素表单以及其常见的表单元素。更详细内容你可以阅读[MDN HTML基础](https://developer.mozilla.org/zh-CN/docs/Learn/HTML/Tables)。
+以上就是 HTML 表单的基本用法。通过学习这些标签和属性，你应该已经能够创建基本的 HTML 表单了。
