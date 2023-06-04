@@ -79,21 +79,6 @@ function changeText() {
 </html>
 ```
 
-<body>
-
-<h1 id="myHeading">Hello World!</h1>
-
-<button onclick="changeText()">点击改变文本</button>
-
-<script>
-function changeText() {
-  var heading = document.getElementById("myHeading");
-  heading.innerHTML = "Hello WTF!";
-}
-</script>
-
-</body>
-
 当用户点击按钮时，页面上的标题会从 "Hello World!" 变为 "Hello WTF!"。
 
 ## 总结
