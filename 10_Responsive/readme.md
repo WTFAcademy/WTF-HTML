@@ -1,4 +1,4 @@
-# WTF HTML极简教程: 11. 响应式设计和移动HTML
+# WTF HTML极简教程: 10. 响应式设计和移动HTML
 
 WTF HTML 教程，帮助新人快速入门 HTML。
 
