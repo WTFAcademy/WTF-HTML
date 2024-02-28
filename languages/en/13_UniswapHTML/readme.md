@@ -19,7 +19,7 @@ In this lecture, we will combine and apply the knowledge from the previous 8 lec
 
 The HTML file determines the structure of the page, so when we get a page, we must first analyze its structure before writing.
 
-![Original image](./img/9-1.jpg)
+![Original image](./img/9-1.png)
 
 We can split the Uniswap page into the following structure (boxes of the same color are at the same level):
 
