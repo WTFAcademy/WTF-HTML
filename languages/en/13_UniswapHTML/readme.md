@@ -23,7 +23,7 @@ The HTML file determines the structure of the page, so when we get a page, we mu
 
 We can split the Uniswap page into the following structure (boxes of the same color are at the same level):
 
-![Structure](./img/9-2.jpg)
+![Structure](./img/9-2.jpg.png)
 
 Then we can draw the structure tree of the page:
 
