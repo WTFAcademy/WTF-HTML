@@ -23,7 +23,7 @@ JavaScript 是一种轻量级的编程语言，经常与 HTML 和 CSS 一起使�
 <html>
 <body>
 
-<h2>HTML 和 JavaScript 示例</h2>
+<h2 id="demo">HTML 和 JavaScript 示例</h2>
 
 <button onclick="displayDate()">显示日期</button>
 
