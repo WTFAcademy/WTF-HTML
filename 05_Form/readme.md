@@ -145,18 +145,20 @@ ACCOUNT:
 示例如下：
 
 ```html
-<form name="input" action="action.php" method="get">
-  <input type="submit" value="Deploy">
+<form name="input" method="get">
+  <input type="submit" value="Submit">
   <input type="text" name="user" placeholder='address'>
 </form>
 ```
 
 浏览器效果：
 
-<form name="input" action="action.php" method="get">
-  <input type="submit" value="Deploy">
+<form name="input" method="get">
+  <input type="submit" value="Submit">
   <input type="text" name="user" placeholder='address'>
 </form>
+
+省略 `action` 时，GET 表单会提交到当前页面。在独立的 `index.html` 示例中提交后，可在地址栏看到 `?user=...`。
 
 ## 表单其他元素
 
