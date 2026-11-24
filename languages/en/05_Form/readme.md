@@ -145,18 +145,20 @@ Forms usually require a submit button to submit user input. This can be done by 
 Examples are as follows:
 
 ```html
-<form name="input" action="action.php" method="get">
-   <input type="submit" value="Deploy">
+<form name="input" method="get">
+   <input type="submit" value="Submit">
    <input type="text" name="user" placeholder='address'>
 </form>
 ```
 
 Browser effect:
 
-<form name="input" action="action.php" method="get">
-   <input type="submit" value="Deploy">
+<form name="input" method="get">
+   <input type="submit" value="Submit">
    <input type="text" name="user" placeholder='address'>
 </form>
+
+Without an `action`, the GET form submits to the current page. Try the standalone `index.html` example and inspect `?user=...` in the address bar.
 
 ## Other elements of the form
 

@@ -32,7 +32,7 @@ The `<img>` tag also has some other attributes that can be used to set the size 
 
 ### Set image size
 
-We can set the width and height of the image through the `width` and `height` attributes of the `<img>` tag. The values ​​of these two properties can be specific pixel values ​​or percentages.
+We can set the width and height of the image through the `width` and `height` attributes of the `<img>` tag. These attributes take non-negative integers in CSS pixels, without a unit. For percentage sizing, use CSS such as `width: 50%; height: auto`.
 
 For example:
 
